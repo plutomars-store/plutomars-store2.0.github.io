@@ -1,125 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop at Pluto Frames | Be The Style Icon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #000;
-        }
-        header p {
-            margin: 5px 0 0;
-            color: #777;
-            font-size: 14px;
-        }
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            margin-bottom: 60px; /* Space for bottom nav */
-        }
-        h2 {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-        .categories {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-        .category-card {
-            background: #fff;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .footer-links {
-            margin-top: 40px;
-            background: #fff;
-            padding: 20px;
-            border-top: 1px solid #ddd;
-        }
-        .footer-links a {
-            display: block;
-            color: #555;
-            text-decoration: none;
-            margin: 10px 0;
-            font-size: 14px;
-        }
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #fff;
-            display: flex;
-            justify-content: space-around;
-            padding: 15px 0;
-            border-top: 1px solid #ddd;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
-        }
-        .bottom-nav a {
-            text-decoration: none;
-            color: #333;
-            font-size: 14px;
-            font-weight: bold;
-        }
-    </style>
+  <title>Coin Hunt Arena</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>PLUTO FRAMES</h1>
-        <p>Be The Style Icon</p>
-    </header>
+<div id="start">
+  <h1>Coin Hunt Arena</h1>
+  <input type="text" id="username" placeholder="Enter username">
+  <button onclick="startGame()">Start Game</button>
+</div>
 
-    <div class="container">
-        <input type="text" placeholder="Search for products..." style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
+<div id="game" class="hidden">
+  <h2 id="playerName"></h2>
+  <h3>Coins Found: <span id="score">0</span>/8</h3>
+  <div id="grid"></div>
+</div>
 
-        <h2>Browse Categories</h2>
-        <div class="categories">
-            <div class="category-card">🏠 House Hold Items</div>
-            <div class="category-card">👕 Fashion</div>
-            <div class="category-card">✨ Perfumes</div>
-            <div class="category-card">📱 Electronic Items</div>
-        </div>
-
-        <div class="footer-links">
-            <a href="#">Payment Policy</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Return and Refund Policy</a>
-            <a href="#">Shipping Policy</a>
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Contact Us</a>
-            <p style="font-size: 12px; color: #aaa; text-align: center; margin-top: 20px;">Copyright © 2026. All rights reserved.</p>
-        </div>
-    </div>
-
-    <div class="bottom-nav">
-        <a href="#">🏠 Home</a>
-        <a href="#">📦 Orders</a>
-        <a href="#">🛒 Cart (0)</a>
-        <a href="#">👤 Account</a>
-    </div>
-
+<script src="app.js"></script>
 </body>
 </html>
